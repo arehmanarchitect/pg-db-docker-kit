@@ -35,21 +35,9 @@ chmod +x run-postgres.sh
    - Password: `public`  
 ---
 ## 4. Manage Containers
-- Stop:
-  ```bash
-  docker stop postgres pgadmin
-  ```
-- Start:
-  ```bash
-  docker start postgres pgadmin
-  ```
-- Remove (keeps DB data):
-  ```bash
-  docker rm -f postgres pgadmin
-  ```
-- Reset (remove everything, including DB data):
-  ```bash
-  docker rm -f postgres pgadmin && docker volume rm pgdata
-  ```
+- Stop:`docker stop postgres pgadmin`
+- Start:`docker start postgres pgadmin`
+- Remove (keeps DB data):`bash docker rm -f postgres pgadmin`
+- Reset (remove everything, including DB data): `docker rm -f postgres pgadmin && docker volume rm pgdata`
 ---
 You now have PostgreSQL + pgAdmin running locally with persistent storage.
