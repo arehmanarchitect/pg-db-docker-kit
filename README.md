@@ -25,11 +25,11 @@ chmod +x run-postgres.sh
 ---
 ## 3. Connect pgAdmin to PostgreSQL
 1. Open pgAdmin → [http://localhost:8080](http://localhost:8080)  
-   - Email: `root`  
+   - Email: `root@gmail.com`  
    - Password: `public`  
 2. Add new server in pgAdmin:  
-   - Name: `postgres`  
-   - Host: `postgres`  
+   - Name: `local-pgsql`  
+   - Host: `postgres_priv`  
    - Port: `5432`  
    - Username: `root`  
    - Password: `public`  
